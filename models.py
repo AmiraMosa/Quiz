@@ -19,7 +19,7 @@ class Quiz(models.Model):
     def __str__(self):
         return self.title
 
-    class meta:
+    class Meta:
         verbose_name_plural = "quizzes"
 
 Answers = (('a','a'),('b','b'),('c','c'),('d','d'),('e','e'))
