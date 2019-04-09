@@ -1,0 +1,9 @@
+<header><title>List of Quizzes</title></header>
+<h1 class='center-block' align='center'>List of Quizzes</h1>
+<body>
+<ul >
+{% for quiz in Objects %}
+    <a href="details/{{quiz.id}}" ><li><p >Quiz Title :{{ quiz.title}}</p></li></a>
+{% endfor %}
+</ul>
+</body>

@@ -1,0 +1,35 @@
+<body>
+
+<h1 align="Center">Quiz{{ quiz.id }}: {{ quiz.title }}</h1>
+<p>No of Questions:         {{ quiz.no_of_questions }}</p>
+<p>Expected Duration:       {{ quiz.expected_duration }}</p>
+<p>Skill Type:              {{ quiz.skill_type }}</p>
+
+
+<p>Max No of ScorePoints:       {{ quiz.Score_Point }}</p>
+
+<h2>Questions</h2>
+<form method="post">{% csrf_token %}
+
+{% for obj in quiz.quest %}
+    <ul >
+
+    <li><p>{{ obj.question }}:</p>
+            <ol type="a">
+                {% if  obj.a  %}<li> <input type="radio" name="Q{{ forloop.counter0 }}" value="a">{{ obj.a }}</li>{% endif %}
+                {% if  obj.b  %}<li><input type="radio" name="Q{{forloop.counter0}}" value="b">{{ obj.b }}</li>{% endif %}
+                {% if  obj.c  %}<li><input type="radio" name="Q{{ forloop.counter0 }}" value="c">{{ obj.c }}</li>{% endif %}
+                {% if  obj.d  %}<li><input type="radio" name="Q{{ forloop.counter0}}" value="d">{{ obj.d }}</li>{% endif %}
+                {% if  obj.e  %}<li><input type="radio" name="Q{{ forloop.counter0 }}" value="e">{{ obj.e }}</li>{% endif %}
+            </ol>
+        </li>
+    </ul>
+    {% empty %}
+    <p>Sorry, there's no questions for this quiz</p>
+{% endfor %}
+
+
+    <input type="submit" value="Submit Answers">
+</form>
+<a href="/showquizzes/" class="arrow"><hr></hr>GoBack</a>
+</body>
