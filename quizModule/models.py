@@ -10,13 +10,14 @@ Programming_Types = (('declarative', 'declarative'), ('procedural', 'procedural'
 
 
 class Quiz(models.Model):
+    created_by = models.ForeignKey(User,on_delete=models.CASCADE,null=True)
+    user = models.ForeignKey(User,on_delete=models.CASCADE,null=True)
     title = models.CharField(max_length=20, default="", blank=False)
     programming_language = models.CharField(max_length=30, choices=Programming_Languages, default='Python', blank=False)
     Programming_Type = models.CharField(max_length=1000, choices=Programming_Types, default='procedural', blank=False)
     skill_type = models.TextField(default='', blank=False)
     no_of_questions = models.IntegerField(blank=False, default=3)
     expected_duration = models.DurationField(default=timedelta(minutes=15))
-
     def __str__(self):
         return self.title
 
@@ -30,8 +31,6 @@ class Quiz(models.Model):
     @property
     def Score_Point(self):
         return len(self.quest)*5
-
-
 Answers = (('a', 'a'), ('b', 'b'), ('c', 'c'), ('d', 'd'), ('e', 'e'))
 
 
@@ -39,7 +38,7 @@ class Question(models.Model):
     question = models.CharField(max_length=2000, default='')
     Answer = models.CharField(choices=Answers, blank=False, default='a', max_length=2)
     #what if question related to many fields
-    quiz_id = models.ForeignKey(Quiz, on_delete=models.CASCADE,null=True)
+    quiz_id = models.ManyToManyField(Quiz)
     a = models.CharField(max_length=200, default='', blank=True)
     b = models.CharField(max_length=200, default='', blank=True)
     c = models.CharField(max_length=200, default='', blank=True)
@@ -52,10 +51,7 @@ class Question(models.Model):
 
 
 #how to make the table have unique fields such that there can't be no 1--->1 many times
-#how to let question be shared with many quizzes
 #how to return all choices of a question when I ask for a GET quiz
-#how I create a Quiz using Forms
-#how I sign in as another user in order to save the quiz for many users
 
 class Solved(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, null=False)

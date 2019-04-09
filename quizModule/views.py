@@ -30,7 +30,7 @@ def showQuizDetails(request, id):
             quiz = Quiz.objects.get(id=id)
         except:
             return HttpResponse('No such ID is available')
-        return render(request, '/QuizDetails.html', {'quiz': quiz})
+        return render(request, 'QuizDetails.html', {'quiz': quiz})
     elif request.method == "POST":
         # obj = Solved.objects.create()
         # post will contains the data I submitted, such as the radio buttons
@@ -49,7 +49,13 @@ def showQuizDetails(request, id):
 
 def getResults(request):
     objects = Solved.objects.all()
-    return render(request,'results.html',{'objects':objects})
+    list = []
+    res = []
+    for obj in objects:
+        if [obj.user_id,obj.quiz_id] not in list:
+            list.append([obj.user_id,obj.quiz_id])
+            res.append(obj)
+    return render(request,'results.html',{'objects':res})
 
 def addQuiz(request):
     form = CreateQuizForm(request.POST or None)

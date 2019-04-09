@@ -1,6 +1,8 @@
 <body>
 
 <h1 align="Center">Quiz{{ quiz.id }}: {{ quiz.title }}</h1>
+<p>Created By:         {{ quiz.created_by }}</p>
+
 <p>No of Questions:         {{ quiz.no_of_questions }}</p>
 <p>Expected Duration:       {{ quiz.expected_duration }}</p>
 <p>Skill Type:              {{ quiz.skill_type }}</p>
@@ -10,7 +12,6 @@
 
 <h2>Questions</h2>
 <form method="post">{% csrf_token %}
-
 {% for obj in quiz.quest %}
     <ul >
 
