@@ -3,7 +3,12 @@
 <body>
 <ul >
 {% for quiz in Objects %}
-    <a href="details/{{quiz.id}}" ><li><p >Quiz Title :{{ quiz.title}}</p></li></a>
+    <li><p>
+        <a href="details/{{quiz.id}}" >Quiz Title :{{ quiz.title}}</a>
+        <a href="edit/{{ quiz.id }}">edit</a>
+        <a href="delete/{{ quiz.id }}">delete</a>
+    </p>
+    </li>
 {% endfor %}
 </ul>
 <hr>

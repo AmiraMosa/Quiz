@@ -17,12 +17,21 @@ from django.contrib import admin
 from django.urls import path
 from quizModule import views
 urlpatterns = [
-    path('admin/', admin.site.urls), #Go to admin settings
-    path('recommend/', views.QuizList.as_view()),  # This is an API no front-end HTML file required
-    path('showquizzes/', views.showQuizez), #get list of all quizzes
+    path('admin/', admin.site.urls,name='Admin'), #Go to admin settings
+    path('showquizzes/', views.showQuizez,name='All'), #get list of all quizzes
     path('', views.showQuizez), #Home Page, get list of all quizzes
-    path('showquizzes/details/<int:id>', views.showQuizDetails), #get details of specific quiz and its questions
-    path('results/', views.getResults), #get result of all solved quizzes till now
-    path('addquiz/', views.addQuiz)
+    path('showquizzes/details/<int:id>', views.showQuizDetails,name='QuizDetails'), #get details of specific quiz and its questions
+    path('showquizzes/edit/<int:id>', views.updateQuiz,name='EditQuiz'),  # get details of specific quiz and its questions
+    path('showquizzes/delete/<int:id>', views.deleteQuiz, name='DeleteQuiz'),
+    # get details of specific quiz and its questions
+
+    path('results/', views.getResults,name='Results'), #get result of all solved quizzes till now
+    path('addquiz/', views.addQuiz,name='CreateQuiz'),
+    path('quiz/getall/', views.QuizAPI.as_view(), name='GetAllQuizAPI'),
+    path('quiz/get/<int:id>', views.QuizAPI.as_view(), name='GetSpecificQuiz'),
+    path('quiz/post/', views.QuizAPI.as_view(), name='PostQuiz'),
+    path('quiz/deleteall', views.QuizAPI.as_view(), name='DeleteAllQuizApi'),
+    path('quiz/delete/<int:id>', views.QuizAPI.as_view(), name='DeleteQuizAPI'),  # This is an API no front-end HTML file required
+    path('quiz/edit/<int:id>', views.QuizAPI.as_view(), name='EditQuizAPI'),
 
 ]
