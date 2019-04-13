@@ -47,7 +47,7 @@ Answers = (('a', 'a'), ('b', 'b'), ('c', 'c'), ('d', 'd'), ('e', 'e'))
 
 
 class Question(models.Model):
-    question = models.CharField(max_length=2000, default='')
+    question = models.CharField(max_length=2000, default='',unique=True)
     Answer = models.CharField(choices=Answers, blank=False, default='a', max_length=2)
     # what if question related to many fields
     quiz_id = models.ManyToManyField(Quiz)
@@ -60,13 +60,9 @@ class Question(models.Model):
     def __str__(self):
         return self.question
 
-
-# how to return all choices of a question when I ask for a GET quiz
-# add edit (put) apis
-# add button to add questions from specific quiz, so you will pass the id of the current quiz
+# No API to add a quiz, as there's a problem in passing quiz_id in the request as list or int
+# add button to add questions from specific quiz, so you will pass the id of the current quiz, so will need to create a form of creating quiz w faks
 # how to make password not visible , done in CRUD video
-# make api to return all questions of specific quiz using its ID
-# GET ALL Details or specific quiz
 class Solved(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, null=False)
     score = models.IntegerField(default=0)

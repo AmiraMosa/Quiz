@@ -27,11 +27,12 @@ urlpatterns = [
 
     path('results/', views.getResults,name='Results'), #get result of all solved quizzes till now
     path('addquiz/', views.addQuiz,name='CreateQuiz'),
-    path('quiz/getall/', views.QuizAPI.as_view(), name='GetAllQuizAPI'),
-    path('quiz/get/<int:id>', views.QuizAPI.as_view(), name='GetSpecificQuiz'),
+    path('quiz/getall/', views.QuizAPI.as_view(), name='GetAllQuizAPI'), # DONE
+    path('quiz/get/', views.getQuizDetails.as_view(), name='GetSpecificQuiz'),
+    path('quiz/getQuestion/', views.QuestionAPI.as_view(), name='getQuestionsAPI'),
     path('quiz/post/', views.QuizAPI.as_view(), name='PostQuiz'),
     path('quiz/deleteall', views.QuizAPI.as_view(), name='DeleteAllQuizApi'),
-    path('quiz/delete/<int:id>', views.QuizAPI.as_view(), name='DeleteQuizAPI'),  # This is an API no front-end HTML file required
-    path('quiz/edit/<int:id>', views.QuizAPI.as_view(), name='EditQuizAPI'),
+    path('quiz/delete/', views.QuizAPI.as_view(), name='DeleteQuizAPI'),  # This is an API no front-end HTML file required
+    path('quiz/edit/', views.QuizAPI.as_view(), name='EditQuizAPI'),
 
 ]
