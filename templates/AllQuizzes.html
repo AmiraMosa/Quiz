@@ -1,0 +1,16 @@
+<header><title>List of Quizzes</title></header>
+<h1 class='center-block' align='center'>List of Quizzes</h1>
+<body>
+<ul >
+{% for quiz in Objects %}
+    <li><p>
+        <a href="details/{{quiz.id}}" >Quiz Title :{{ quiz.title}}</a>
+        <a href="edit/{{ quiz.id }}">edit</a>
+        <a href="delete/{{ quiz.id }}">delete</a>
+    </p>
+    </li>
+{% endfor %}
+</ul>
+<hr>
+<a href="/addquiz/" >add new Quiz</a>
+</body>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Score Board</title>
+</head>
+<body>
+{% for obj in objects %}
+    <ul >
+
+    <P>User: {{ obj.user.id }} solved Quiz {{ obj.quiz.title }} with Score {{ obj.score }}</P>
+
+</ul>
+{% empty %}
+    <p>No One has Solved any question till now</p>
+
+{% endfor %}
+<a href="/showquizzes/" class="arrow"><hr></hr>GoBack</a>
+
+</body>
+</html>
