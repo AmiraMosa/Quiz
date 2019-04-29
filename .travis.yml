@@ -8,5 +8,6 @@ python:
 before_script: 
   - cd quizModule/
   
+  
 script:
-  - ./manage.py test
+  - python manage.py test
