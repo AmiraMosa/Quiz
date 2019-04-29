@@ -25,6 +25,10 @@ urlpatterns = [
     path('showquizzes/delete/<int:id>', views.deleteQuiz, name='DeleteQuiz'),
     # get details of specific quiz and its questions
 
+    path('details/<int:id>', views.showQuizDetails, name='QuizDetails'),
+    path('edit/<int:id>', views.updateQuiz, name='EditQuiz'),
+    path('delete/<int:id>', views.deleteQuiz, name='DeleteQuiz'),
+
     path('results/', views.getResults,name='Results'), #get result of all solved quizzes till now
     path('addquiz/', views.addQuiz,name='CreateQuiz'),
     path('quiz/getall/', views.QuizAPI.as_view(), name='GetAllQuizAPI'), # DONE
