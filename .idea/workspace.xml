@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5db3cb3b-7ca5-4b7c-a529-663f9b3fc369" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/settings.py" afterDir="false" />
-    </list>
+    <list default="true" id="5db3cb3b-7ca5-4b7c-a529-663f9b3fc369" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,8 +86,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Test/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="92" column="42" selection-start-line="92" selection-start-column="42" selection-end-line="92" selection-end-column="42" />
+            <state relative-caret-position="-229">
+              <caret line="78" column="16" lean-forward="true" selection-start-line="78" selection-start-column="16" selection-end-line="78" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -416,11 +411,18 @@
       <option name="project" value="LOCAL" />
       <updated>1555003389445</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Adding Docker Files">
+      <created>1556568303608</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1556568303608</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="109686000" />
+    <option name="totallyTimeSpent" value="110387000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -435,7 +437,7 @@
       <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.50067115" side_tool="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Version Control" order="4" weight="0.3286119" />
       <window_info anchor="bottom" id="Python Console" order="5" weight="0.3286119" />
-      <window_info active="true" anchor="bottom" id="manage.py@Test" order="6" sideWeight="0.49932885" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="manage.py@Test" order="6" sideWeight="0.49932885" weight="0.3286119" />
       <window_info anchor="bottom" id="Message" order="7" />
       <window_info anchor="bottom" id="Find" order="8" weight="0.3286119" />
       <window_info anchor="bottom" id="Run" order="9" weight="0.3286119" />
@@ -459,7 +461,8 @@
     </ignored-roots>
     <MESSAGE value="Quiz can be answered by any user" />
     <MESSAGE value="Adding APIs such as GetAllQuizzes,PostQuiz,deleteQuiz" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding APIs such as GetAllQuizzes,PostQuiz,deleteQuiz" />
+    <MESSAGE value="Adding Docker Files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding Docker Files" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/block.rnc">
@@ -771,8 +774,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Test/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="92" column="42" selection-start-line="92" selection-start-column="42" selection-end-line="92" selection-end-column="42" />
+        <state relative-caret-position="-229">
+          <caret line="78" column="16" lean-forward="true" selection-start-line="78" selection-start-column="16" selection-end-line="78" selection-end-column="16" />
         </state>
       </provider>
     </entry>
