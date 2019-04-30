@@ -13,4 +13,4 @@ install:
 
 
 script:
-  - manage.py test
+  - ./manage.py test_models.py
