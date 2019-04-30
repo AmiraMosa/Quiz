@@ -36,7 +36,7 @@ def updateQuiz(request, id):
 
 
 def deleteQuiz(request, id):
-    q = get_object_or_404(Quiz, id=id).delete()
+    q = get_object_or_404(Quiz,id=id).delete()
     return redirect('/showquizzes/')
 
 
