@@ -1,3 +1,4 @@
+dist: xenial
 
 language: python
 
@@ -12,4 +13,4 @@ install:
 
 
 script:
-  - ./manage.py test
+  - manage.py test
