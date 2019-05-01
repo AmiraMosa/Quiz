@@ -10,4 +10,5 @@ install:
 
 
 script:
-  - python tests.py
+  - python test_models.py
+  - python test_views.py
