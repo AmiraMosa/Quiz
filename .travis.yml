@@ -10,5 +10,5 @@ install:
 
 
 script:
-  - python test_models.py
-  - python test_views.py
+  - python quizModule/test_models.py
+  - python quizModule/test_views.py
