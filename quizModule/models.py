@@ -1,7 +1,7 @@
 from django.db import models
 from datetime import timedelta
 from django.contrib.auth.models import User
-from .models import  * #3amlt import le nafs lsf7a 34an kolo y4ofny
+from models import  * #3amlt import le nafs lsf7a 34an kolo y4ofny
 
 Programming_Languages = (('Python', 'Python'), ('Java', 'Java'), ('C++', 'C++'), ('C', 'C'), ('C#', 'C#'),
                          ('JavaScript', 'JavaScript'), ('PHP', 'PHP'), ('Prolog', 'Prolog'), ('MySQL', 'MySQL'),

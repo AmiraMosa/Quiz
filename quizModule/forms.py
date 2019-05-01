@@ -1,4 +1,4 @@
-from .models import *
+from models import *
 from django.forms import ModelForm,ValidationError
 class CreateQuizForm (ModelForm):
     class Meta:

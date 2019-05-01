@@ -8,7 +8,7 @@ from django.test import Client
 from django.urls import path
 
 from quizModule.views import showQuizDetails, ModelForm
-from .models import Quiz
+from models import Quiz
 import json
 
 from django.test import TestCase

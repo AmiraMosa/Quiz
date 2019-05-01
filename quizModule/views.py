@@ -3,7 +3,7 @@ from serializers import *
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from django.http import *
-from .forms import *
+from forms import *
 
 
 def showQuizez(request):
