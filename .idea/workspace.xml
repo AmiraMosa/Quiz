@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5db3cb3b-7ca5-4b7c-a529-663f9b3fc369" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/quizModule/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/quizModule/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quizModule/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/quizModule/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quizModule/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/quizModule/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quizModule/test_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/quizModule/test_models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/quizModule/test_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/quizModule/test_views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quizModule/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/quizModule/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,11 +36,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/quizModule/test_views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+            <state relative-caret-position="153">
+              <caret line="9" column="40" lean-forward="true" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Test/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="248">
+              <caret line="43" column="21" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -116,17 +121,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/quizModule/test_urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -190,15 +184,15 @@
         <option value="$PROJECT_DIR$/Test/urls.py" />
         <option value="$PROJECT_DIR$/Dockerfile" />
         <option value="$PROJECT_DIR$/docker-compose.yaml" />
-        <option value="$PROJECT_DIR$/Test/settings.py" />
         <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/quizModule/serializers.py" />
         <option value="$PROJECT_DIR$/quizModule/test_models.py" />
-        <option value="$PROJECT_DIR$/quizModule/test_views.py" />
         <option value="$PROJECT_DIR$/quizModule/views.py" />
         <option value="$PROJECT_DIR$/quizModule/models.py" />
         <option value="$PROJECT_DIR$/quizModule/forms.py" />
+        <option value="$PROJECT_DIR$/quizModule/test_views.py" />
+        <option value="$PROJECT_DIR$/Test/settings.py" />
       </list>
     </option>
   </component>
@@ -227,6 +221,11 @@
               <item name="Quiz" type="b2602c69:ProjectViewProjectNode" />
               <item name="Quiz" type="462c0819:PsiDirectoryNode" />
               <item name="quizModule" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Quiz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Quiz" type="462c0819:PsiDirectoryNode" />
+              <item name="Test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -678,13 +677,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="86" column="30" selection-start-line="86" selection-start-column="30" selection-end-line="86" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/django/db/models/manager.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1292">
@@ -775,8 +767,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/quizModule/test_views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        <state relative-caret-position="153">
+          <caret line="9" column="40" lean-forward="true" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="43" column="21" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
         </state>
       </provider>
     </entry>

@@ -7,7 +7,7 @@ from django.template.loader import render_to_string
 from django.test import Client
 from django.urls import path
 
-from quizModule.views import showQuizDetails, ModelForm
+from views import showQuizDetails, ModelForm
 from models import Quiz
 import json
 
